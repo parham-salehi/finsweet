@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../../fonts/Poppins-Light.ttf");
+}
+
+header {
+  width: 100%;
+}
+
+header .header {
+  width: 100%;
+  height: 92px;
+  background: #1c1e53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header .header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-flow: row wrap;
+  height: inherit;
+  width: 18%;
+}
+
+header .header .logo svg {
+  width: 122px;
+  color: #ffffff;
+}
+
+header .header .nav {
+  width: 55%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-flow: row wrap;
+  column-gap: 32px;
+  padding-right: 40px;
+}
+
+header .header .nav div {
+  width: auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header .header .nav div a {
+  display: block;
+  color: #bbbbcb;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+header .header .nav div a:hover {
+  color: #fff;
+}
+
+header .header .btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-flow: row wrap;
+  width: 25%;
+  height: inherit;
+}
+
+header .header .btn button {
+  all: unset;
+  text-align: center;
+  display: block;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  width: 185px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #bbbbcb;
+  cursor: pointer;
+}
+
+header .header .btn button:hover {
+  color: #fff;
+}
+
+header .header input {
+  display: none;
+}
+
+header .header .hamburgernav {
+  display: none;
+}
+
+.background1 {
+  padding: 10%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.background1 h2 {
+  width: 80%;
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  padding-bottom: 30px;
+  /* Heading 2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  /* 133.333% */
+}
+.background1 span {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* 175% */
+}
+.background1 p {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  width: 80%;
+  padding-bottom: 30px;
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 175% */
+  opacity: 0.7;
+}
+.background1 a {
+  text-decoration: none;
+  color: var(--Royal-Blue, #2405f2);
+  text-align: center;
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 175% */
+}
+.background1 div {
+  width: 100%;
+  height: 500px;
+  margin: 60px auto;
+}
+.background1 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.background2 {
+  padding: 10%;
+  padding-top: 0;
+}
+.background2 h2 {
+  color: var(--Dark-blue, #282938);
+  /* Heading 2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  /* 133.333% */
+  text-align: center;
+  padding-bottom: 50px;
+}
+.background2 .blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 60px;
+}
+.background2 .blogs .blog {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+  width: 100%;
+}
+.background2 .blogs .blog span {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* 175% */
+  opacity: 0.7;
+}
+.background2 .blogs .blog h6 {
+  color: var(--Dark-blue, #282938);
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  /* 150% */
+}
+.background2 .blogs .blog p {
+  color: var(--Dark-blue, #282938);
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 175% */
+  opacity: 0.7;
+}
+.background2 .blogs .blog a {
+  color: var(--Tint-blue, #1c1e53);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* 175% */
+  text-decoration: none;
+}
+.background2 .blogs .blog a svg {
+  margin-left: 10px;
+}
+.background2 .blogs .blog img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.background9 {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  background-color: #1c1e53;
+  width: 100%;
+  padding: 10%;
+  padding-bottom: 0;
+  column-gap: 10%;
+}
+
+.background9 div {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 15px;
+}
+
+.background9 div p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.8;
+}
+
+.background9 div h2 {
+  color: whitesmoke;
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.background9 div svg {
+  margin-right: 10%;
+}
+
+.background9 div div {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 50px;
+}
+
+.background9 div div a {
+  width: 50%;
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-decoration: none;
+  background-color: #fcd980;
+  padding: 20px 0 20px 20px;
+}
+
+.background9 div div a p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  opacity: 1;
+}
+
+.background9 div div a span {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  opacity: 0.8;
+}
+
+.background9 div div a:hover {
+  background-color: #c8a650;
+}
+
+footer {
+  padding: 0 10%;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #fff;
+  height: 92px;
+  align-items: center;
+  font-size: 12px;
+}
+
+footer div {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer div div {
+  text-align: end;
+  width: auto;
+  padding: 0 3%;
+  height: 40px;
+}
+
+footer div div:hover {
+  background-color: #1c1e53;
+  border-radius: 10px;
+}
+
+footer div div:hover a {
+  color: #ffffff;
+}
+
+footer div div a {
+  text-decoration: none;
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}

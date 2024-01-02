@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../../fonts/Poppins-Light.ttf);
+}
+.header {
+  width: 100%;
+  height: 92px;
+  background: #1c1e53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-flow: row wrap;
+  height: inherit;
+  width: 18%;
+}
+.header .logo svg {
+  width: 122px;
+  color: #ffffff;
+}
+.header .nav {
+  width: 55%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-flow: row wrap;
+  column-gap: 32px;
+  padding-right: 40px;
+}
+.header .nav div {
+  width: auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.header .nav div a {
+  display: block;
+  color: #bbbbcb;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.header .nav div a:hover {
+  color: #fff;
+}
+.header .btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-flow: row wrap;
+  width: 25%;
+  height: inherit;
+}
+.header .btn button {
+  all: unset;
+  text-align: center;
+  display: block;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  width: 185px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #bbbbcb;
+  cursor: pointer;
+}
+.header .btn button:hover {
+  color: #fff;
+}
+.header input {
+  display: none;
+}
+.header .hamburgernav {
+  display: none;
+}
+
+.background1 {
+  background-color: #fff;
+  width: 100%;
+}
+.background1 div {
+  width: 40%;
+  margin: 50px auto;
+  text-align: center;
+}
+.background1 div h2 {
+  color: var(--Dark-blue, #282938);
+
+  /* Heading 2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+}
+.background1 div p {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+  margin-top: 30px;
+  text-align: justify;
+  text-justify: auto;
+}
+.background2 {
+  width: 100%;
+  padding: 8%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.background2 .card {
+  border-radius: 12px;
+  background: var(--Grey, #f4f6fc);
+  padding: 60px 30px;
+}
+
+.background2 .card h3 {
+  display: inline-block;
+  color: var(--Dark-blue, #282938);
+  margin-bottom: 30px;
+  margin-right: 10px;
+  /* Heading 3 */
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 147.368% */
+}
+.background2 .card h6 {
+  color: var(--Dark-blue, #282938);
+
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+  margin-bottom: 10px;
+}
+.background2 .card p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+}
+.background2 .card span {
+  color: var(--Royal-Blue, #2405f2);
+
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.background2 .card div {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.background2 .card div:nth-of-type(6) {
+  height: 70px;
+}
+
+.background2 .card button {
+  all: unset;
+  cursor: pointer;
+  border-radius: 41px;
+  background: var(--Dark-blue, #282938);
+  width: 60%;
+  height: 50px;
+  color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+}
+.background2 .card .tozih {
+  all: unset;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.background2 .card:hover {
+  background-color: #1c1e53;
+}
+.background2 .card:hover p,
+.background2 .card:hover h3,
+.background2 .card:hover h6 {
+  color: #fff;
+}
+.background2 .card:hover span {
+  color: #fcd980;
+}
+.background2 .card:hover button {
+  border-radius: 41px;
+  background: var(--Yellow, #fcd980);
+  color: var(--Dark-blue, #282938);
+}
+.background9 {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  background-color: #1c1e53;
+  width: 100%;
+  padding: 10%;
+  padding-bottom: 0;
+  column-gap: 10%;
+}
+.background9 div {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 15px;
+}
+.background9 div p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.8;
+}
+.background9 div h2 {
+  color: whitesmoke;
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+.background9 div svg {
+  margin-right: 10%;
+}
+.background9 div div {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 50px;
+}
+.background9 div div a {
+  width: 50%;
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-decoration: none;
+  background-color: #fcd980;
+  padding: 20px 0 20px 20px;
+}
+.background9 div div a p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  opacity: 1;
+}
+.background9 div div a span {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  opacity: 0.8;
+}
+.background9 div div a:hover {
+  background-color: #c8a650;
+}
+footer {
+  padding: 0 10%;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #fff;
+  height: 92px;
+  align-items: center;
+  font-size: 12px;
+}
+footer div {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer div div {
+  text-align: end;
+  width: auto;
+  padding: 0 3%;
+  height: 40px;
+}
+footer div div:hover {
+  background-color: #1c1e53;
+  border-radius: 10px;
+}
+footer div div:hover a {
+  color: #ffffff;
+}
+footer div div a {
+  text-decoration: none;
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}

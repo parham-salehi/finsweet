@@ -1,0 +1,20 @@
+{
+  "name": "finsweet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "desktop": "node-sass -w scss/desktop.scss -o css/ -r",
+    "mobile": "node-sass -w scss/mobile.scss -o css/ -r",
+    "about-desktop": "node-sass -w scss/about/about-desktop.scss -o css/about -r",
+    "about-mobile": "node-sass -w scss/about/about-mobile.scss -o css/about -r"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "node-sass": "^9.0.0",
+    "swiper": "^11.0.5"
+  }
+}

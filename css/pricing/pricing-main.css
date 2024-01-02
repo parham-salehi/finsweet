@@ -1,0 +1,2 @@
+@import "./pricing-mobile.css" only screen and (max-width: 992px);
+@import "./pricing-desktop.css" only screen and (min-width: 992px);
